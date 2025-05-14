@@ -36,9 +36,9 @@ function calcular() {
 
 function resetCalculator() {
   if (confirm("Tem certeza que deseja reiniciar o cálculo?")) {
-    document.getElementById("numero1").value = "";
-    document.getElementById("numero2").value = "";
-    document.getElementById("operacao").value = "soma";
+    document.getElementById("numero1").innerText = "";
+    document.getElementById("numero2").innerText = "";
+    document.getElementById("operacao").innerText = "soma";
     document.getElementById("resultado").innerText = "---";
   }
 }
